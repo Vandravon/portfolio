@@ -7,17 +7,21 @@
 body {
     color: #000000;
     background-color: #FFFFFF;
-    font-size: 1.1em;;
+    font-size: 1.1rem;;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-    width: 400px;
+    width: 380px;
     margin: auto;
 }
 
 #whoami {
-    padding: 100px 0 50px 0;
+    padding: 75px 0 75px 0;
+}
+
+#whoami div * {
+    line-height: 2rem;
 }
 
 .flex {
@@ -25,8 +29,16 @@ body {
     flex-direction: column;
 }
 
+#photo img {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5% 50% 5% 5%;
+}
+
 #presentation {
-    padding: 50px 0 50px 0;
+    padding: 75px 0 75px 0;
     background-color: #a0c8b6;
 }
 
@@ -56,6 +68,34 @@ body {
 }
 
 #projects {
-    padding: 50px 0 100px 0;
+    padding: 75px 0 100px 0;
     background-color: #a0c8b6;
+}
+
+footer {
+    padding: 75px 0 75px 0;
+
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 980px;
+  }
 }
